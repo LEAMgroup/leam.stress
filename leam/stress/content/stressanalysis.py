@@ -166,7 +166,7 @@ class StressAnalysis(base.ATCTContent):
         SubElement(tree, 'repository').text = \
             'http://datacenter.leamgroup.com/svn/desktop/ccrpc_sa/trunk'
         SubElement(tree, 'cmdline').text = \
-            'python startup -c config.xml'
+            'python startup.py -c config.xml'
 
         for p in self.getLayer():
             reg = SubElement(tree, 'zonemap')
